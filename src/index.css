@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    /* border: 0.5px solid red; */
+}
+
+input {
+    background: unset;
+}
+input:focus {
+    all: unset;
+    border-bottom: 2px solid white;
+    padding: 5px 0;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+:root {
+    --font-family: "SF Pro Display", sans-serif;
+    --second-family: "SF Pro Text", sans-serif;
+    --third-family: "Helvetica Neue", sans-serif;
+    font-family: "SF Pro Display", sans-serif;
+  }
+
+html,
+body {
+    background-color: black;
+    color: white;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow: hidden;
+}
+
+.custom-overflow {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+.sbg2 {
+    clip-path: inset(0 0 50px 0);
+}
+
+.video {
+    clip-path: inset(0px 11.5vw 30.5vw 0px);
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none; /* Hide scrollbar on WebKit browsers */
+  }
+.scrollbar-hidden {
+    -ms-overflow-style: none; /* Hide scrollbar on IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar on Firefox */
+}
+
+
+
+/* Small styles */
+@media (min-width: 640px) and (max-width: 768px) {
+    .video {
+        clip-path: inset(0px 3.7vw 10.4vw 0px);
+    }
+  }
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .video {
+        clip-path: inset(0px 3.7vw 10.4vw 0px);
+    }
+  }
+  
+  /* Desktop styles */
+  @media (min-width: 1025px) {
+    .video {
+        clip-path: inset(0px 4.3vw 10.7vw 0px);
+    }
+  }
