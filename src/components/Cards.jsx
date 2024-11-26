@@ -31,7 +31,7 @@ const Cards = () => {
             { x: window.innerWidth <= 480 ? "85vw" : "330%",
                 opacity: 1,
                 duration: 1,
-                // delay: 2,
+                delay: 2,
                 scrollTrigger: {
                   trigger: ".card-container",
                   start: window.innerWidth <= 480 ? "top 40%" : "top 15%",
