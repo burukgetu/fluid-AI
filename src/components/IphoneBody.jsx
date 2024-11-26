@@ -23,7 +23,7 @@ const IphoneBody = () => {
 
         <div className="sm:w-[28%] relative">
             <img 
-                className="absolute  rounded-[30px]"
+                className="absolute w-full rounded-tl-[50px] rounded-br-[110px]"
                 src="speaking-fluid-bg-1.svg"
                 draggable="false"
             />
@@ -33,7 +33,7 @@ const IphoneBody = () => {
                 draggable="false"
             />
             <img 
-                className="mt-2 absolute sbg2 rounded-[50px]"
+                className="mt-2 w-full absolute sbg2 rounded-[50px]"
                 src="speaking-fluid-bg-2.svg"
                 draggable="false"
             />

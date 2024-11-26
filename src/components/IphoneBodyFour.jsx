@@ -23,19 +23,19 @@ const IphoneBodyFour = () => {
 
         <div className="sm:w-[28%] relative">
             <img 
-                className="absolute z-0 rounded-[30px]"
+                className="absolute w-full z-0 rounded-[50px] rounded-br-[150px]"
                 src="speaking-fluid-bg-1.svg"
                 draggable="false"
             />
             <img 
-                className="absolute bottom-0 z-20"
+                className="absolute w-full bottom-0 z-20"
                 src="home-icon.png"
             />
             <div className="absolute w-full h-full z-10 overflow-x-hidden overflow-y-visible scrollbar-hidden">
                 <img
-                    className="mt-2 rounded-lg"
+                    className="mt-2 w-[98%] rounded-lg"
                     src="Explore.png"
-                    draggable="false"
+                    // draggable="false"
                 />
             </div>
             <img
