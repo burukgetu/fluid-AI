@@ -26,7 +26,7 @@ const Cards = () => {
         
           gsap.fromTo(
             "#card_2",
-            { x: window.innerWidth <= 480 ? "140vw%" : "500%", 
+            { x: window.innerWidth <= 480 ? "140vw" : "500%", 
               y: window.innerWidth <= 480 ? "-100%" : "70%" },
             { x: window.innerWidth <= 480 ? "85vw" : "330%",
                 opacity: 1,
