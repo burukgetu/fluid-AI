@@ -2,7 +2,7 @@
 
 const Navbar = () => {
   return (
-    <div className="flex w-full px-12 justify-between items-center h-16">
+    <div className="flex w-full px-6 md:px-12 justify-between items-center h-16">
         <img className="sm:hidden flex" src="drop-icon.svg" alt="" />
         <div className="hidden md:flex gap-12">
             <p className="font-[--font-family]">Our features</p>

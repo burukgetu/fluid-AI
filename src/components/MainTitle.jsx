@@ -2,7 +2,7 @@
 
 const MainTitle = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center mt-48 mb-4 sm:mb-16 sm:gap-6">
+    <div className="w-full flex flex-col justify-center px-4 md:px-0 items-center mt-96 md:mt-48 mb-4 sm:mb-16 sm:gap-6">
         <p className="text-sm opacity-[.5]">
             Our features
         </p>

@@ -9,7 +9,7 @@ const Gradient = () => {
 
   useEffect(() => {
     gsap.to(".unlock", {
-      y: window.innerWidth <= 480 ? -100 : -200,
+      y: window.innerWidth <= 480 ? -70 : -200,
       x: window.innerWidth <= 780 ? 0 : -20,
       scrollTrigger: {
         trigger: ".grad-container", // Trigger animation on scroll
@@ -26,13 +26,13 @@ const Gradient = () => {
         <div className="h-full overflow-hidden">
             <div className="unlock absolute w-full z-20 h-full flex items-center justify-center">
                 <p className="absolute text-3xl  md:text-6xl w-[40vw] text-center">Unlock Seamless Efficiency</p>
-                <button className="mt-48 md:mt-56 bg-white text-xs md:text-sm text-black py-2 md:py-3 px-5 md:px-8 rounded-full shadow-[0_0_15px_2px_rgba(255,255,255,0.7)] hover:shadow-[0_0_15px_5px_rgba(255,255,255,0.7)] transition-shadow duration-300 ease-in-out">
+                <button className="mt-40 md:mt-56 bg-white text-xs md:text-sm text-black py-2 md:py-3 px-5 md:px-8 rounded-full shadow-[0_0_15px_2px_rgba(255,255,255,0.7)] hover:shadow-[0_0_15px_5px_rgba(255,255,255,0.7)] transition-shadow duration-300 ease-in-out">
                     Join waitlist
                 </button>
             </div>
         </div>
             <Cards/>
-            <img className="scale-[1.5] md:scale-[1] translate-x-16 -z-10" src="/the-gradient.png" alt="" />
+            <img className="scale-[1.5] md:scale-[1] translate-x-16 translate-y-16 md:translate-y-0 -z-10" src="/the-gradient.png" alt="" />
     </div>
   )
 }
