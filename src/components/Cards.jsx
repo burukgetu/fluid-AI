@@ -10,8 +10,9 @@ const Cards = () => {
 
         gsap.fromTo(
             "#card_1",
-            { x: window.innerWidth <= 480 ? "-130%" : "0%", y: window.innerWidth <= 480 ? "-110%" : "20%" },
-            { x: window.innerWidth <= 480 ? "-50%" : "50%",
+            { x: window.innerWidth <= 480 ? "-130%" : "0%", 
+              y: window.innerWidth <= 480 ? "-110%" : "20%" },
+            { x: window.innerWidth <= 480 ? "-25vw" : "50%",
                 opacity: 1,
                 duration: 1,
                 delay: 2,
@@ -25,12 +26,12 @@ const Cards = () => {
         
           gsap.fromTo(
             "#card_2",
-            { x: window.innerWidth <= 480 ? "200%" : "500%", 
+            { x: window.innerWidth <= 480 ? "140vw%" : "500%", 
               y: window.innerWidth <= 480 ? "-100%" : "70%" },
-            { x: window.innerWidth <= 480 ? "130%" : "330%",
+            { x: window.innerWidth <= 480 ? "85vw" : "330%",
                 opacity: 1,
                 duration: 1,
-                delay: 2,
+                // delay: 2,
                 scrollTrigger: {
                   trigger: ".card-container",
                   start: window.innerWidth <= 480 ? "top 40%" : "top 15%",

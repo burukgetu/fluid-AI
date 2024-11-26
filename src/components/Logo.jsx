@@ -10,7 +10,7 @@ const Logo = () => {
 
   useEffect(() => {
     gsap.to(".logo", {
-      y: window.innerWidth <= 480 ? 250 : 430,
+      y: window.innerWidth <= 480 ? 200000/window.innerHeight : 430,
       scale: window.innerWidth <= 480 ? 0.3 : 0.15,
       scrollTrigger: {
         trigger: ".container", 

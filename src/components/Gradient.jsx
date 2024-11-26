@@ -8,8 +8,9 @@ gsap.registerPlugin(ScrollTrigger)
 const Gradient = () => {
 
   useEffect(() => {
+    const height = window.innerHeight;
     gsap.to(".unlock", {
-      y: window.innerWidth <= 480 ? -70 : -200,
+      y: window.innerWidth <= 480 ? -55000/height : -200,
       x: window.innerWidth <= 780 ? 0 : -20,
       scrollTrigger: {
         trigger: ".grad-container", // Trigger animation on scroll
